@@ -1,5 +1,15 @@
 # roundcubebruter
-bruteforce script for Roundcube webmail client
+Bruteforce script for Roundcube webmail client. Can be applied during the pentest as part of webmail password spraying.
+
+
+# Installation & Usage
+```
+git clone https://github.com/elkokc/roundcubebruter.git
+cd roundcubebruter
+pip install requests
+python3 bruter.py -u http://192.168.179.145  -p P@ssw0rd --usernames usernames.txt -t 20
+```
+
 
 # Options
 ```

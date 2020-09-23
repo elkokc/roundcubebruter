@@ -23,7 +23,7 @@ if (len(sys.argv) > 1):
     parser.add_argument('--url', '-u', type=str,
                         help='roundcube application URL')
     parser.add_argument('--threads', '-t', type=int,
-                        help='Number of Threads". ', default=10)
+                        help='Number of Threads', default=10)
     parser.add_argument('--usernames', type=str,
                         help="username file")
     parser.add_argument('--password', '-p', type=str,
@@ -31,16 +31,16 @@ if (len(sys.argv) > 1):
 
     args = parser.parse_args()
     if(not args.url):
-        print("'--url' was omited")
+        print("'--url' was omitted")
         exit(-1)
     if (not args.threads):
-        print("'--threads' was omited")
+        print("'--threads' was omitted")
         exit(-1)
     if (not args.usernames):
-        print("'--usernames' was omited")
+        print("'--usernames' was omitted")
         exit(-1)
     if (not args.password):
-        print("'--password' was omited")
+        print("'--password' was omitted")
         exit(-1)
 
     settings["password"] = args.password
